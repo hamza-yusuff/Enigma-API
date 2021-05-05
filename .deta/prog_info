@@ -1,1 +1,0 @@
-{"id":"d6259c8d-8da6-4d73-a5c7-e958357e6185","space":4221,"runtime":"python3.7","name":"Cryptography_functions","path":"qe73tu","project":"c0k0t9w2","account":"144798365827","region":"ap-southeast-1","deps":["fastapi","cryptography","pynacl","pycryptodome","uvicorn"],"envs":null,"public":true,"log_level":"debug","cron":"","reload_deps":false}
