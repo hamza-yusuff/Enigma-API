@@ -3,6 +3,7 @@ from fastapi import HTTPException
 import uvicorn
 from pynacl import *
 from keys import generate_public_key, generate_private_key
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from cryptodom import AES_encrypt, AES_decrypt
 from rsacipher import *
@@ -11,6 +12,12 @@ from vs import *
 
 app = fastapi.FastAPI()
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 #Base model for post endpoints of Nacl library
 class Code(BaseModel):
