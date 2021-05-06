@@ -1,7 +1,6 @@
-
 # Enigma-API
 
-https://97i6zt.deta.dev/
+## API - https://97i6zt.deta.dev/docs#/
 
 This API provides access to several encryption and hashing functions. It essentially allows the user to obtain hashes, keys and
 encrypted, as well as decrypted, text by exposing existing encryption ciphers and hashing algorithms. In addition to that, the
@@ -24,11 +23,32 @@ Currently, the API exposes functions for the following ciphers, algorithms and h
 For a detailed discussion of the endpoints and corresponding algorithms used, you can continue reading below, otherwise you can skip
 ahead to the console of the api - https://qe73tu.deta.dev/docs#/
 
+## Table of Contents
+
+- [Inspiration](#inspire)
+- [Why FastAPI](#fastapi)
+- [Usage](#usage)
+- [PyNacl Cryptography](#pynacl)
+- [PyCryptodome](#pycrypto)
+- [HRSA (Implementation of RSA)](#rsa)
+- [Caesar Cipher](#caesar)
+- [Vigenere Cipher](#vig)
+- [Primes](#prime)
+- [RSA Public and Private Keys](#keys)
+- [Improvements](#improvements)
+- [Disclaimer](#disclaimer)
+- [Contribution](#contribute)
+- [Author](#author)
+
 ## Inspiration
+
+<a name='inspire'>
 
 My first foray into the world of computer science was through the world of cryptography. To be more precise, the movie- The Imitation Game - imprinted itself in the mind of 13 year old budding math enthusiastic, me. Ever since then, my interest gradually turned into a commitment to the subject of computer science. And to the layman, this field may be limited to computers, but I have discovered over time that in this subject’s core lies complex computations, intricate networks, and an extraordinary need for original thinking.
 
 ## WHY FASTAPI (JUST MY THOUGHTS AND THANKS)
+
+<a name='fastapi'>
 
 When it comes to high performance, the existing python web frameworks have always been slow in comparison to their contemporaries, like NodeJS and Go. Also, the cPython implementation of GIL(global interpreter lock) has been a pain for async, await and multi-threading operations with python. Even though, Django has recently added support for async operations, Django channels for instance, it still has a long way to go to compete with NodeJS.
 
@@ -43,11 +63,15 @@ For more info - https://fastapi.tiangolo.com/
 
 # USAGE
 
+<a name='usage'>
+
 The following are the endpoints of this API -
 
 ## Endpoints which facilitate POST Request
 
 ### PyNacl
+
+<a name='pynacl'>
 
 PyNaCl is a Python binding to libsodium, which is a fork of the Networking and Cryptography library, and LibSodium is a modern, easy-to-use software library for encryption, decryption, signatures, password hashing and more. These libraries have a stated goal of improving usability, security and speed. More importantly, it does not require the developer to decide which encryption technique to use, and thus largely takes away the stress of knowing the underlying of a cipher and it’s potential vulnerabilities, making the process of encrypting/decrypting data more seamless. In short, it prevents the user from doing cryptography in an insecure way.
 
@@ -79,6 +103,8 @@ Notice, in the decryption the same encyrpted text obtained from the encryption A
 
 ### PyCryptodom
 
+<a name='pycrypto'>
+
 PyCryptodome is a self-contained Python package of low-level cryptographic primitives. PyCryptodome is a fork of PyCrypto. I have used pycrtodome to implement Advanced Standard Encryption ( CBC mode) , and for those who are unaware of the AES, it’s essentially a symmetric key encryption, which uses the given key and an initialization vector ( a 128 bit round key) followed by multiple rounds of permutation and substitution on a 4x4 block of array of bytes to generate the encrypted text.
 For more detailed explanation of AES, you can visit the link https://en.wikipedia.org/wiki/Advanced_Encryption_Standard
 
@@ -106,6 +132,8 @@ obtained from the endpoint which provides the encrypted text, along with the key
 ![aesD2](https://user-images.githubusercontent.com/63330003/117169080-97765800-adea-11eb-976a-1103ddef6509.PNG)
 
 ### HRSA (Implementation of RSA)
+
+<a name='rsa'>
 
 RSA (Rivest–Shamir–Adleman) is a public-key cryptosystem that is widely used for secure data transmission. It is also one of the oldest. The acronym RSA comes from the surnames of Ron Rivest, Adi Shamir and Leonard Adleman, who publicly described the algorithm in 1977.
 
@@ -135,6 +163,8 @@ https://97i6zt.deta.dev/hrsa/decryption/
 ![hrsaD2](https://user-images.githubusercontent.com/63330003/117171684-e8874b80-adec-11eb-9491-6a8bbd2a896f.PNG)
 
 ### Hashing
+
+<a name='hashing'>
 
 Cryptographic secure hash functions are irreversible transforms of input data to a fixed length digest.
 
@@ -183,6 +213,8 @@ password hashing ( right above) . If the hashing provided is of the password/tex
 
 ### Caesar Cipher
 
+<a name='caesar'>
+
 Implemented the Caesar Cipher completely on my own, and exposed the algorithm with the following endpoint below. It works on both positive and negative shift, and to use the endpoint, you must provide the text to be encrypted and the shift to be used on the text.
 
 #### Encrypts the message with the given Shift and Caesar Cipher
@@ -198,6 +230,8 @@ https://97i6zt.deta.dev/caesardecrypt/{message}/{shift}/
 ![caesarD](https://user-images.githubusercontent.com/63330003/117176676-eecbf680-adf1-11eb-860b-69c5310345da.PNG)
 
 ### Vigenere Cipher
+
+<a name='vig'>
 
 Implemented the Vigenere Cipher completely on my own, and exposed the algorithm with the following endpoint below. It works on key of any length, and to use the endpoint, you must provide the text to be encrypted and the key to be used on the text.
 Howevere, the cipher implemented works best with lowercase letters only.
@@ -215,6 +249,8 @@ For the decryption, you just have to provide the encrypted message and the same 
 https://97i6zt.deta.dev/vigeneredecrypt/{message}/{key}/
 
 ### Prime Numbers
+
+<a name='prime'>
 
 The mere existence of prime numbers has always been a mystery to me, and at this point, I can quite confidently say whoever is reading this would be aware of the importance of prime numbers in cryptography.
 If you need a refresher on the definition of a prime number, it's a number larger than 1 that's divisible only by itself and 1.
@@ -251,6 +287,8 @@ https://97i6zt.deta.dev/kprime/{k}/{start}/{end}/
 
 ### RSA Public and Private Keys
 
+<a name='keys'>
+
 Implemented the Extended Euclidean Algorithm, along with RSA cipher completely on my own to generate the desired public key and the
 corresponding private key. To look into the algorithm I used, you can view the source code in the keys.py and prime_euclid.py file.
 
@@ -273,18 +311,26 @@ https://97i6zt.deta.dev/hrsa/hrsa/privatekey/{e}/{p1}/{p2}/
 
 ## Improvements
 
+<a name='improvements'>
+
 In the foreseeable future, I would like to add endpoints to authenticate users and allow them to
 store their keys throught the API. That way, they do not have to send the cryptographic keys in
 request body every time they make a call for the desired resource. This is important beacuse sending keys can jeopardize the whole process of encryption/decryption. Basically, I will soon integrate database to the API.
 
 ## Disclaimer
 
+<a name='disclaimer'>
+
 I have built this project to explore and learn about the world of cryptography, with a renewed sense of curosity. Hence, it's made purely for learning purposes. However, anyone willing to use this API is more than welcome to do so. Thanks!
 
 ## Contributing
 
+<a name='contribute'>
+
 Bug reports and pull requests are welcome on GitHub at @hamza-yusuff
 
 ## Author
+
+<a name='author'>
 
 Hamza Yusuff - Email: [hbyusuff@uwaterloo.ca](#hbyusuff@uwaterloo.ca)
