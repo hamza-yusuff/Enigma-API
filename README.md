@@ -148,7 +148,8 @@ To know more about RSA, you can visit the link - https://en.wikipedia.org/wiki/R
 
 https://97i6zt.deta.dev/hrsa/encryption/
 
-The prime numbers p1 and p2 used to obtain, the private key for encryption, must have a product of greater than 100.
+The prime numbers p1 and p2 used to obtain the private and public key for encryption must have a product of greater than 100. For the encryption endpoint, you must provide the pubic key along with the product of p1 and p2 (n in this case), and for decryption endpoint, you have to put the private key along with the product of p1 and p2 (n in this case)
+in the request body.
 
 ![hrsaE1](https://user-images.githubusercontent.com/63330003/117171420-aa8a2780-adec-11eb-8e7c-003f37b5385e.PNG)
 
