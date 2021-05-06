@@ -52,7 +52,7 @@ My first foray into the world of computer science was through the world of crypt
 
 When it comes to high performance, the existing python web frameworks have always been slow in comparison to their contemporaries, like NodeJS and Go. Also, the cPython implementation of GIL(global interpreter lock) has been a pain for async, await and multi-threading operations with python. Even though, Django has recently added support for async operations, Django channels for instance, it still has a long way to go to compete with NodeJS.
 
-FastAPI seems to have answers to these problems. It’s one of the fastest python web frameworks available and it’s performance is on par with NodeJS and Go. More so, I have found to be very intuitive to learn and use. Undoubtedly, it has improved the speed of Engima API, as speed is an issue because of the highly complex operations being used by the algorithms for the endpoints.
+FastAPI seems to have answers to these problems. It’s one of the fastest python web frameworks available and it’s performance is on par with NodeJS and Go. More so, I have found it to be very intuitive to learn and use. Undoubtedly, it has improved the speed of Engima API, as speed is an issue because of the highly complex operations being used by the algorithms for the endpoints.
 The reason for this high speed and unconventional provision of asyncio services could be because of the fact that FastAPI was built on starlette ( web framework which suppors ASGI) , and starlette uses uvicorn. The hierarchy is like –
 Uvicorn (ASGI Server) -> Starlette (uses Uvicorn) a web framework) -> FastAPI (uses Starlette) an API microframework with several additional features for building APIS, with data validation, etc.
 
