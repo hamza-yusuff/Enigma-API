@@ -44,7 +44,7 @@ ahead to the console of the api - https://qe73tu.deta.dev/docs#/
 
 <a name='inspire'>
 
-My first foray into the world of computer science was through the world of cryptography. To be more precise, the movie- The Imitation Game - imprinted itself in the mind of 13 year old budding math enthusiastic, me. Ever since then, my interest gradually turned into a commitment to the subject of computer science. And to the layman, this field may be limited to computers, but I have discovered over time that in this subject’s core lies complex computations, intricate networks, and an extraordinary need for original thinking.
+My first foray into the world of computer science was through the world of cryptography. To be more precise, the movie- The Imitation Game - imprinted itself in the mind of 13 year old budding math enthusiastic, me. Ever since then, my interest gradually turned into a commitment to the subject of computer science. To the layman, this field may be limited to computers, but I have discovered over time that in this subject’s core lies complex computations, intricate networks, and an extraordinary need for original thinking.
 
 ## WHY FASTAPI (JUST MY THOUGHTS AND THANKS)
 
