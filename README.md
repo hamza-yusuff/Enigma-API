@@ -142,7 +142,7 @@ The Algroithm works for all characters with an ASCII value greater than 31, incl
 
 To get the public and private key for RSA,you can use the GET endpoints available in this API.
 
-To know more about RSA, you visit the link - https://en.wikipedia.org/wiki/RSA_(cryptosystem)
+To know more about RSA, you can visit the link - https://en.wikipedia.org/wiki/RSA_(cryptosystem)
 
 #### Encryption
 
