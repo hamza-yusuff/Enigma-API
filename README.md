@@ -3,7 +3,7 @@
 ## API - https://97i6zt.deta.dev/docs#/
 
 This API provides access to several encryption and hashing functions. It essentially allows the user to obtain hashes, keys and
-encrypted, as well as decrypted, text by exposing existing encryption ciphers and hashing algorithms. In addition to that, the
+encrypted, as well as decrypted, text by exposing existing cryptographic ciphers and hashing algorithms. In addition to that, the
 API has three endpoints, which when given a certain number of parameters, provides the user with prime numbers of any length of
 bits. I have built this API using FastAPI to leverage it's async, await and high performance features, which ultimately compensates for the complexities of the encryption and hashing algorithms used.
 
