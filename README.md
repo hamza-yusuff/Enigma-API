@@ -30,7 +30,7 @@ ahead to the console of the api - https://qe73tu.deta.dev/docs#/
 - [Usage](#usage)
 - [PyNacl Cryptography](#pynacl)
 - [PyCryptodome](#pycrypto)
-- [HRSA (Implementation of RSA)](#rsa)
+- [HRSA (My Implementation of RSA that supports encryption/decryption of all characters with an ascii value greater than 31)](#rsa)
 - [Caesar Cipher](#caesar)
 - [Vigenere Cipher](#vig)
 - [Primes](#prime)
@@ -43,15 +43,15 @@ ahead to the console of the api - https://qe73tu.deta.dev/docs#/
 
 <a name='inspire'>
 
-My first foray into the world of computer science was through the world of cryptography. To be more precise, the movie- The Imitation Game - imprinted itself in the mind of 13 year old budding math enthusiastic, me. Ever since then, my interest gradually turned into a commitment to the subject of computer science. To the layman, this field may be limited to computers, but I have discovered over time that in this subject’s core lies complex computations, intricate networks, and an extraordinary need for original thinking.
+My first foray into the world of computer science was through the world of cryptography. To be more precise, the movie- The Imitation Game - initated my venture into this field. Ever since then, my interest gradually turned into a commitment to the subject of computer science.
 
 ## WHY FASTAPI (JUST MY THOUGHTS AND THANKS)
 
 <a name='fastapi'>
 
-When it comes to high performance, the existing python web frameworks have always been slow in comparison to their contemporaries, like NodeJS and Go. Also, the cPython implementation of GIL(global interpreter lock) has been a pain for async, await and multi-threading operations with python. Even though, Django has recently added support for async operations, Django channels for instance, it still has a long way to go to compete with NodeJS.
+When it comes to high performance, the existing python web frameworks have always been slow in comparison to their contemporaries, for example NodeJS and Go. Also, the cPython implementation of GIL(global interpreter lock) has been a pain for async, await and multi-threading operations with python. Even though, Django has recently added support for async operations, Django channels for instance, it still has a long way to go to compete with NodeJS.
 
-FastAPI seems to have answers to these problems. It’s one of the fastest python web frameworks available and it’s performance is on par with NodeJS and Go. More so, I have found it to be very intuitive to learn and use. Undoubtedly, it has improved the speed of Engima API, as speed is an issue because of the highly complex operations being used by the algorithms for the endpoints.
+FastAPI seems to have answers to these problems. It’s one of the fastest python web frameworks available and it’s performance is on par with NodeJS and Go. More so, I have found it to be very intuitive to learn and use. Undoubtedly, it has improved the speed of Engima API, and speed is an issue because of the preformance intensive operations being used by the algorithms for the endpoints.
 The reason for this high speed and unconventional provision of asyncio services could be the fact that FastAPI was built on starlette ( web framework which suppors ASGI) , and starlette uses uvicorn. The hierarchy is like –
 Uvicorn (ASGI Server) -> Starlette (uses Uvicorn) a web framework) -> FastAPI (uses Starlette) an API microframework with several additional features for building APIS, with data validation, etc.
 
