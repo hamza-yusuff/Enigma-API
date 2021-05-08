@@ -43,7 +43,7 @@ ahead to the console of the api - https://qe73tu.deta.dev/docs#/
 
 <a name='inspire'>
 
-My first foray into the world of computer science was through the world of cryptography. To be more precise, the movie- The Imitation Game - initated my venture into this field. Ever since then, my interest gradually turned into a commitment to the subject of computer science.
+My first foray into the world of computer science was through the world of cryptography. To be more precise, the movie- The Imitation Game - initated my venture into this field. Ever since then, my interest gradually turned into a commitment to the subject of computer science. I have built this project to re-visit the world of cryptograhpy with a better skill-set and knowledge.
 
 ## WHY FASTAPI (JUST MY THOUGHTS AND THANKS)
 
