@@ -31,6 +31,7 @@ ahead to the console of the api - https://qe73tu.deta.dev/docs#/
 - [PyNacl Cryptography](#pynacl)
 - [PyCryptodome](#pycrypto)
 - [HRSA (My Implementation of RSA that supports encryption/decryption of all characters with an ascii value greater than 31)](#rsa)
+- [Hashing](#hashing)
 - [Caesar Cipher](#caesar)
 - [Vigenere Cipher](#vig)
 - [Primes](#prime)
