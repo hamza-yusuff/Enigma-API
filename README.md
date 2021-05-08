@@ -9,7 +9,7 @@ bits. I have built this API using FastAPI to leverage it's async, await and high
 
 I have used PyNaCl cryptographic library, a Python binding to libsodium (fork of the Networking and Cryptography
 library), for some of the endpoints which provide symmetric key encryption and hashing, and for Advanced Encryption Standard (AES), I have built the API endpoint using the CBC mode of AES encryption cipher of PyCryptodome library. The API provides 18 endpoints in total, with half of them facilitating encryption/decryption ciphers through POST request, and the other half does so through GET.
-Currently, the API exposes functions for the following ciphers, algorithms and hashes-
+Currently, the API exposes functions for the following crptographic algorithms-
 
 - Vigener Cipher (Complete implementation on my own)
 - Caesar Cipher (Complete implementation on my own)
