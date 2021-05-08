@@ -72,7 +72,7 @@ The following are the endpoints of this API -
 
 <a name='pynacl'>
 
-PyNaCl is a Python binding to libsodium, which is a fork of the Networking and Cryptography library, and LibSodium is a modern, easy-to-use software library for encryption, decryption, signatures, password hashing and more. These libraries have a stated goal of improving usability, security and speed. More importantly, it does not require the developer to decide which encryption technique to use, and thus largely takes away the stress of knowing the underlying of a cipher and it’s potential vulnerabilities, making the process of encrypting/decrypting data more seamless. In short, it prevents the user from doing cryptography in an insecure way.
+PyNaCl is a Python binding to libsodium, which is a fork of the Networking and Cryptography library, and LibSodium is a modern, easy-to-use software library for encryption, decryption, signatures, password hashing and more. These libraries have a stated goal of improving usability, security and speed. More importantly, it does not require the developer to decide which encryption technique to use, and thus largely takes away the stress of knowing the underlying of a cipher and it’s potential vulnerabilities, making the process of encrypting/decrypting data more seamless. To summarize, it prevents the user from doing cryptography in an insecure way.
 
 It by default provides the most secured and resistant mode of encryption, (for both symmetric and asymmetric) along with the required padding. Currently, it stands as one of the best libraries for cryptography. For more info - https://pynacl.readthedocs.io/en/stable/
 
