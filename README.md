@@ -37,7 +37,6 @@ ahead to the console of the api - https://qe73tu.deta.dev/docs#/
 - [RSA Public and Private Keys](#keys)
 - [Improvements](#improvements)
 - [Disclaimer](#disclaimer)
-- [Contribution](#contribute)
 - [Author](#author)
 
 ## Inspiration
@@ -324,11 +323,6 @@ request body every time they make a call for the desired resource. This is impor
 
 I have built this project to explore and learn about the world of cryptography, with a renewed sense of curosity. Hence, it's made purely for learning purposes. However, anyone willing to use this API is more than welcome to do so. Thanks!
 
-## Contributing
-
-<a name='contribute'>
-
-Bug reports and pull requests are welcome on GitHub at @hamza-yusuff
 
 ## Author
 
