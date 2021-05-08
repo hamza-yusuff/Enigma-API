@@ -7,7 +7,7 @@ encrypted, as well as decrypted, text by exposing existing cryptographic ciphers
 API has three endpoints, which when given a certain number of parameters, provides the user with prime numbers of any length of
 bits. I have built this API using FastAPI to leverage it's async, await and high performance features, which ultimately compensates for the complexities of the encryption and hashing algorithms used.
 
-I have used PyNaCl cryptographic library , which happens to be a Python binding to libsodium (fork of the Networking and Cryptography
+I have used PyNaCl cryptographic library, a Python binding to libsodium (fork of the Networking and Cryptography
 library), for some of the endpoints which provide symmetric key encryption and hashing, and for Advanced Encryption Standard (AES), I have built the API endpoint using the CBC mode of AES encryption cipher of PyCryptodome library. The API provides 18 endpoints in total, with half of them facilitating encryption/decryption ciphers through POST request, and the other half does so through GET.
 Currently, the API exposes functions for the following ciphers, algorithms and hashes-
 
